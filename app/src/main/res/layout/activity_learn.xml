@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="Answers"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="-20dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question:"
+                android:textColor="#363843"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/q"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="Your current best score is"
+                android:textColor="#7A8089"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer:"
+                android:layout_marginTop="16dp"
+                android:textColor="#363843"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/answ"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="Your current best score is"
+                android:textColor="#7A8089"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Source(s):"
+                android:layout_marginTop="16dp"
+                android:textColor="#363843"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+                    <TextView
+                        android:id="@+id/source"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:text="Your current best score is"
+                        android:textColor="#7A8089"
+                        android:textSize="15sp"
+                        android:scrollbars = "vertical"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/previous"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/design_default_color_primary"
+            app:iconPadding="0dp"
+            app:icon="@drawable/ic_baseline_arrow_back_24"
+            app:iconGravity="textStart" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="Button"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/startQuiz"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@color/design_default_color_primary"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="START QUIZ"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="Button"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/design_default_color_primary"
+            app:iconPadding="0dp"
+            app:icon="@drawable/ic_baseline_arrow_forward_24"
+            app:iconGravity="textEnd" />
+    </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>
